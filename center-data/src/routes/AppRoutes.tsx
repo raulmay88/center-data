@@ -4,7 +4,7 @@ import { Home } from "../pages/Home";
 import { Companies } from "../pages/Companies";
 import RightLaws from "../pages/RightLaws";
 import { Help } from "../pages/Help";
-import { Profile } from "../pages/Profile";
+import { Us } from "../pages/Us";
 import MainLayout from "../layouts/MainLayout";
 
 export default function AppRouter() {
@@ -16,7 +16,7 @@ export default function AppRouter() {
             <Route path="/services" element={<Companies />} />
             <Route path="/right-laws" element={<RightLaws />} />
             <Route path="/help" element={<Help />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/us" element={<Us />} />
          </Route>
       </Routes>
     </BrowserRouter>

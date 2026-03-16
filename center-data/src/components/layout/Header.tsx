@@ -4,15 +4,15 @@ import {
   Building2,
   Scale,
   HelpCircle,
-  User
+  User,
 } from "lucide-react";
 
 const menuItems = [
   { name: "Inicio", path: "/", icon: Home },
   { name: "Derechos laborales", path: "/right-laws", icon: Scale },
   { name: "Empresas inclusivas", path: "/services", icon: Building2 },
+  { name: "Nosotros", path: "/us", icon: User },
   { name: "Ayuda", path: "/help", icon: HelpCircle },
-  { name: "Perfil", path: "/profile", icon: User }
 ];
 
 export default function Header() {

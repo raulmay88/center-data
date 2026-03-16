@@ -60,6 +60,46 @@ export const Home = () => {
         </motion.p>
       </section>
 
+      {/* PROBLEM / MISSION */}
+        <section className="max-w-6xl mx-auto px-6 py-10 text-center">
+        <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+        >
+            ¿Por qué existe Access To Work?
+        </motion.h2>
+
+        <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-gray-600 max-w-4xl mx-auto text-lg mb-6"
+        >
+            Muchas personas con discapacidad enfrentan barreras para acceder a un
+            empleo digno. En muchos casos, la discriminación laboral se manifiesta
+            cuando se les niegan oportunidades debido a prejuicios o estereotipos,
+            sin considerar sus verdaderas capacidades y talentos.
+        </motion.p>
+
+        <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-gray-600 max-w-4xl mx-auto text-lg"
+        >
+            Además, la falta de accesibilidad, la escasa adaptación de los espacios
+            laborales y la desinformación de algunos empleadores siguen siendo
+            obstáculos importantes. Access To Work nace para cambiar esta realidad,
+            conectando talento con oportunidades y promoviendo entornos laborales
+            más justos, inclusivos y accesibles para todos.
+        </motion.p>
+        </section>
+
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
 
@@ -124,6 +164,37 @@ export const Home = () => {
         </motion.div>
 
       </section>
+
+      {/* CALL TO ACTION */}
+<section className="bg-blue-600 py-20 text-white">
+  <div className="max-w-5xl mx-auto text-center px-6">
+
+    <motion.h2
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="text-3xl md:text-4xl font-bold mb-6"
+    >
+      Construyamos un futuro laboral más inclusivo
+    </motion.h2>
+
+    <motion.p
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.2 }}
+      viewport={{ once: true }}
+      className="max-w-3xl mx-auto text-lg mb-8"
+    >
+      Access To Work busca conectar personas con discapacidad con
+      oportunidades laborales reales, promoviendo la igualdad de
+      oportunidades y fomentando empresas comprometidas con la inclusión.
+      Juntos podemos construir un entorno laboral donde el talento sea
+      lo que realmente importe.
+    </motion.p>
+
+  </div>
+</section>
 
       {/* IMPACT */}
       <section className="bg-gray-100 py-20">
