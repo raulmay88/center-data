@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Scale, ShieldCheck, Building2, AlertTriangle } from "lucide-react";
 
-export default function RightLawsPage() {
+export const RightLawsPage = () => {
   return (
     <div className="w-full flex flex-col gap-24">
 
