@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CompaniesSection } from "./CompaniesSection";
+import { TikTokSection } from "./TikTokSection";
 
 export const Companies = () => {
   return (
@@ -30,13 +31,7 @@ export const Companies = () => {
       <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
 
         {/* IMAGE */}
-        <div className="w-full aspect-square rounded-xl overflow-hidden">
-          <img
-            src="https://img.freepik.com/foto-gratis/vista-lateral-personas-que-trabajan-oficina_23-2149759020.jpg"
-            alt="Empresa inclusiva"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <TikTokSection />
 
         {/* TEXT */}
         <div>
