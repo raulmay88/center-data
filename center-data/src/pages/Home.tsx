@@ -27,7 +27,7 @@ export const Home = () => {
 
             <p className="max-w-2xl mx-auto text-lg text-gray-200 mb-8">
               Impulsamos la inclusión laboral y conectamos talento con
-              oportunidades justas y accesibles para personas con discapacidad.
+              oportunidades justas y accesibles para personas con discapacidad. En realidad
             </p>
 
           </motion.div>
