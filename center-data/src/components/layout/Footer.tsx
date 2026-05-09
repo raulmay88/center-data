@@ -167,7 +167,7 @@ export default function Footer() {
             <button
               type="button"
               onClick={openWelcomeModal}
-              className="inline-flex items-center gap-1 transition hover:text-white"
+              className="inline-flex items-center gap-1 transition hover:text-white cursor-pointer"
             >
               <Info size={15} />
               Ver bienvenida

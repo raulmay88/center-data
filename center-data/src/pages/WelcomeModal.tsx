@@ -57,7 +57,7 @@ export default function WelcomeModal() {
               type="button"
               onClick={closeModal}
               aria-label="Cerrar mensaje"
-              className="absolute right-5 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-slate-200 hover:text-slate-900 active:scale-95"
+              className="absolute right-5 top-5 z-10 flex h-10 w-10 items-center cursor-pointer justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-slate-200 hover:text-slate-900 active:scale-95"
             >
               <X size={20} />
             </button>
@@ -97,7 +97,7 @@ export default function WelcomeModal() {
               <button
                 type="button"
                 onClick={closeModal}
-                className="mt-8 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-600 to-emerald-600 px-8 py-3 font-bold text-white shadow-md transition hover:scale-105 hover:shadow-lg active:scale-95"
+                className="mt-8 inline-flex items-center justify-center rounded-full bg-gradient-to-r cursor-pointer from-sky-600 to-emerald-600 px-8 py-3 font-bold text-white shadow-md transition hover:scale-105 hover:shadow-lg active:scale-95"
               >
                 Entendido
               </button>
