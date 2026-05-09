@@ -154,7 +154,7 @@ export const CompaniesSection = () => {
                   }`}
                 >
                   {/* FRONT */}
-                  <div className="absolute inset-0 overflow-hidden rounded-[2rem] border border-white bg-white shadow-lg transition group-hover:shadow-2xl [backface-visibility:hidden]">
+                  <div className="absolute cursor-pointer inset-0 overflow-hidden rounded-[2rem] border border-white bg-white shadow-lg transition group-hover:shadow-2xl [backface-visibility:hidden]">
                     <div className="relative h-56 overflow-hidden bg-slate-100">
                       <img
                         src={company.image}

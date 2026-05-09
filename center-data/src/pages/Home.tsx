@@ -93,8 +93,48 @@ export const Home = () => {
           </h2>
 
           <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
-            Analizar la discriminación que enfrentan las personas con discapacidad para acceder a un empleo formal, identificando sus causas, consecuencias y las soluciones existentes
+            Analizar la discriminación que enfrentan las personas con discapacidad
+            para acceder a un empleo formal, identificando sus causas, consecuencias
+            y las soluciones existentes.
           </p>
+
+          {/* INTRODUCCIÓN */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mt-12 rounded-[2rem] border border-sky-100 bg-white/90 p-7 md:p-9 text-left shadow-xl backdrop-blur-sm"
+          >
+            <div className="flex flex-col md:flex-row gap-5">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-emerald-600 text-white shadow-md">
+                <HeartHandshake size={30} />
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-extrabold text-slate-900 mb-4">
+                  Introducción al problema
+                </h3>
+
+                <p className="text-slate-600 text-lg leading-relaxed">
+                  El acceso al empleo es un derecho fundamental para el desarrollo de
+                  las personas; sin embargo, las personas con discapacidad no siempre
+                  lo ejercen en condiciones de igualdad. A pesar de los avances
+                  sociales y legales, la discriminación laboral persiste y limita su
+                  inclusión en el ámbito profesional.
+                </p>
+
+                <p className="text-slate-600 text-lg leading-relaxed mt-4">
+                  Entre las principales barreras se encuentran los prejuicios, la
+                  falta de accesibilidad y la desinformación. Esta investigación
+                  analiza dicha discriminación, sus causas, consecuencias y posibles
+                  soluciones, considerando que esta situación afecta el desarrollo
+                  personal, la autoestima, la independencia y la participación social
+                  de quienes la enfrentan.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       </section>
 
