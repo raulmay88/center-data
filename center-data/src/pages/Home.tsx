@@ -2,14 +2,20 @@ import Carousel from "../components/common/carousel/Carousel";
 import { images } from "../components/common/carousel/Images";
 
 import {
+  Accessibility,
+  AlertTriangle,
+  BarChart3,
   Building2,
   HeartHandshake,
+  MapPin,
+  Percent,
   Scale,
   ShieldCheck,
   Sparkles,
   UsersRound,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import ImpactCharts from "./ImpactCharts";
 
 export const Home = () => {
   return (
@@ -311,8 +317,12 @@ export const Home = () => {
       </section>
 
       {/* IMPACT */}
-      <section id="impacto" className="bg-white py-24">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="impacto" className="relative overflow-hidden bg-white py-24">
+        <div className="absolute -left-28 top-10 h-72 w-72 rounded-full bg-sky-100 blur-3xl" />
+        <div className="absolute -right-28 bottom-10 h-72 w-72 rounded-full bg-emerald-100 blur-3xl" />
+        <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-violet-100/70 blur-3xl" />
+
+        <div className="relative max-w-7xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -320,60 +330,198 @@ export const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <span className="inline-flex items-center rounded-full bg-amber-100 text-amber-700 px-4 py-2 text-sm font-semibold mb-5">
-              Impacto positivo
+            <span className="inline-flex items-center gap-2 rounded-full bg-amber-100 text-amber-700 px-4 py-2 text-sm font-semibold mb-5">
+              <BarChart3 size={18} />
+              Datos que muestran la importancia de la inclusión
             </span>
 
             <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900">
-              Pequeñas acciones, grandes cambios
+              La inclusión laboral también se entiende con datos
             </h2>
+
+            <p className="max-w-3xl mx-auto mt-5 text-lg leading-relaxed text-slate-600">
+              Estas cifras ayudan a dimensionar la importancia de construir espacios
+              laborales accesibles, justos y libres de discriminación para personas
+              con discapacidad.
+            </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center">
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="rounded-3xl bg-sky-50 border border-sky-100 p-8 shadow-sm"
+              className="group rounded-3xl bg-sky-50 border border-sky-100 p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
             >
-              <h3 className="text-5xl font-extrabold text-sky-600">+200</h3>
-              <p className="text-slate-600 mt-3 text-lg">
-                Personas beneficiadas
+              <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-100 text-sky-600 transition group-hover:bg-sky-600 group-hover:text-white">
+                <UsersRound size={34} />
+              </div>
+
+              <h3 className="text-5xl font-extrabold text-sky-600">8.8M</h3>
+
+              <p className="text-slate-900 mt-3 text-lg font-bold">
+                Personas con discapacidad en México
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Población de 5 años y más con discapacidad registrada en 2023.
               </p>
             </motion.div>
 
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
+              transition={{ delay: 0.15, duration: 0.5 }}
               viewport={{ once: true }}
-              className="rounded-3xl bg-emerald-50 border border-emerald-100 p-8 shadow-sm"
+              className="group rounded-3xl bg-emerald-50 border border-emerald-100 p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
             >
-              <h3 className="text-5xl font-extrabold text-emerald-600">
-                +50
-              </h3>
-              <p className="text-slate-600 mt-3 text-lg">
-                Empresas aliadas
+              <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600 transition group-hover:bg-emerald-600 group-hover:text-white">
+                <Percent size={34} />
+              </div>
+
+              <h3 className="text-5xl font-extrabold text-emerald-600">7.2%</h3>
+
+              <p className="text-slate-900 mt-3 text-lg font-bold">
+                De la población nacional
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Porcentaje de personas de 5 años y más con discapacidad en México.
               </p>
             </motion.div>
 
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
               viewport={{ once: true }}
-              className="rounded-3xl bg-violet-50 border border-violet-100 p-8 shadow-sm"
+              className="group rounded-3xl bg-violet-50 border border-violet-100 p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
             >
-              <h3 className="text-5xl font-extrabold text-violet-600">
-                100%
-              </h3>
-              <p className="text-slate-600 mt-3 text-lg">
-                Compromiso con la inclusión
+              <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-violet-100 text-violet-600 transition group-hover:bg-violet-600 group-hover:text-white">
+                <MapPin size={34} />
+              </div>
+
+              <h3 className="text-5xl font-extrabold text-violet-600">241,795</h3>
+
+              <p className="text-slate-900 mt-3 text-lg font-bold">
+                Personas en Quintana Roo
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Personas con discapacidad, limitación o condición mental según Censo
+                2020.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.45, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="group rounded-3xl bg-amber-50 border border-amber-100 p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+            >
+              <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-100 text-amber-600 transition group-hover:bg-amber-500 group-hover:text-white">
+                <AlertTriangle size={34} />
+              </div>
+
+              <h3 className="text-5xl font-extrabold text-amber-600">33.8%</h3>
+
+              <p className="text-slate-900 mt-3 text-lg font-bold">
+                Reportó discriminación
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Personas con discapacidad de 12 años y más discriminadas en los
+                últimos 12 meses.
               </p>
             </motion.div>
           </div>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-3 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="rounded-3xl bg-white border border-slate-100 p-7 shadow-sm"
+            >
+              <h3 className="text-4xl font-extrabold text-sky-600">13.0%</h3>
+
+              <p className="text-slate-900 mt-3 font-bold">
+                De la población en Quintana Roo
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Tiene discapacidad, limitación o algún problema/condición mental.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="rounded-3xl bg-white border border-slate-100 p-7 shadow-sm"
+            >
+              <h3 className="text-4xl font-extrabold text-emerald-600">67,005</h3>
+
+              <p className="text-slate-900 mt-3 font-bold">
+                Personas con discapacidad en Quintana Roo
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Cifra específica de población con discapacidad registrada en el
+                estado.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="rounded-3xl bg-white border border-slate-100 p-7 shadow-sm"
+            >
+              <h3 className="text-4xl font-extrabold text-violet-600">164,117</h3>
+
+              <p className="text-slate-900 mt-3 font-bold">
+                Personas con limitación
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Personas con alguna limitación en la actividad cotidiana en Quintana
+                Roo.
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35, duration: 0.55 }}
+            viewport={{ once: true }}
+            className="mt-10 rounded-3xl border border-sky-100 bg-gradient-to-r from-sky-50 to-emerald-50 p-6 text-center shadow-sm"
+          >
+            <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm">
+              <Accessibility size={30} />
+            </div>
+
+            <p className="mx-auto max-w-4xl text-slate-700 leading-relaxed">
+              Estas cifras muestran que la inclusión laboral no es un tema aislado:
+              representa una necesidad social importante tanto a nivel nacional como
+              en Quintana Roo. Informar, orientar y promover empresas inclusivas puede
+              ayudar a reducir barreras y abrir oportunidades reales.
+            </p>
+          </motion.div>
+
+          <p className="mt-6 text-center text-xs text-slate-400">
+            Fuentes: INEGI ENADID 2023, Censo de Población y Vivienda 2020 para
+            Quintana Roo y ENADIS 2022.
+          </p>
         </div>
+
+        <ImpactCharts />
       </section>
     </div>
   );
