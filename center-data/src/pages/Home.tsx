@@ -36,8 +36,8 @@ export const Home = () => {
               Inclusión laboral para todos
             </motion.span>
 
-            <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-              Discriminación laboral
+            <h1 className="text-md md:text-6xl font-extrabold mb-6 leading-tight">
+              Discriminación laboral hacia las personas con discapacidad
             </h1>
 
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/90 mb-8 leading-relaxed">

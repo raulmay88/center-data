@@ -1,10 +1,8 @@
 import {
   Building2,
-  Facebook,
   HeartHandshake,
   HelpCircle,
-  Instagram,
-  Mail,
+  Info,
   MapPin,
   Phone,
   Scale,
@@ -40,6 +38,10 @@ const resources = [
 ];
 
 export default function Footer() {
+  const openWelcomeModal = () => {
+    window.dispatchEvent(new Event("openWelcomeModal"));
+  };
+
   return (
     <footer className="relative overflow-hidden bg-slate-950 text-white">
       {/* Decorative background */}
@@ -71,32 +73,6 @@ export default function Footer() {
               inclusivas para personas con discapacidad, conectando talento con
               empresas comprometidas.
             </p>
-
-            <div className="mt-6 flex items-center gap-3">
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-slate-300 transition hover:bg-sky-500 hover:text-white hover:scale-105 active:scale-95"
-              >
-                <Facebook size={19} />
-              </a>
-
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-slate-300 transition hover:bg-pink-500 hover:text-white hover:scale-105 active:scale-95"
-              >
-                <Instagram size={19} />
-              </a>
-
-              <a
-                href="mailto:contacto@accesstowork.com"
-                aria-label="Correo electrónico"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-slate-300 transition hover:bg-emerald-500 hover:text-white hover:scale-105 active:scale-95"
-              >
-                <Mail size={19} />
-              </a>
-            </div>
           </div>
 
           {/* Quick links */}
@@ -152,11 +128,6 @@ export default function Footer() {
 
             <ul className="space-y-4 text-slate-300">
               <li className="flex items-start gap-3">
-                <Mail size={18} className="mt-1 text-sky-300" />
-                <span>contacto@accesstowork.com</span>
-              </li>
-
-              <li className="flex items-start gap-3">
                 <Phone size={18} className="mt-1 text-emerald-300" />
                 <span>+52 998 000 0000</span>
               </li>
@@ -193,14 +164,29 @@ export default function Footer() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
+            <button
+              type="button"
+              onClick={openWelcomeModal}
+              className="inline-flex items-center gap-1 transition hover:text-white"
+            >
+              <Info size={15} />
+              Ver bienvenida
+            </button>
+
+            <span className="hidden sm:inline text-slate-600">•</span>
+
             <Link to="/help" className="transition hover:text-white">
               Ayuda
             </Link>
+
             <span className="hidden sm:inline text-slate-600">•</span>
+
             <Link to="/right-laws" className="transition hover:text-white">
               Derechos laborales
             </Link>
+
             <span className="hidden sm:inline text-slate-600">•</span>
+
             <Link to="/us" className="transition hover:text-white">
               Nosotros
             </Link>

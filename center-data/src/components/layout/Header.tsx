@@ -16,12 +16,13 @@ const menuItems = [
   { name: "Derechos laborales", path: "/right-laws", icon: Scale },
   { name: "Empresas inclusivas", path: "/services", icon: Building2 },
   { name: "Nosotros", path: "/us", icon: User },
-  { name: "Ayuda", path: "/help", icon: HelpCircle },
 ];
 
 export default function Header() {
   const location = useLocation();
   const [open, setOpen] = useState(false);
+
+  const isHelpActive = location.pathname === "/help";
 
   return (
     <header className="w-full sticky top-0 z-50 border-b border-sky-100/80 bg-white/85 backdrop-blur-xl shadow-sm">
@@ -78,13 +79,18 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Desktop CTA */}
+        {/* Desktop Help Button */}
         <div className="hidden lg:flex items-center">
           <Link
             to="/help"
-            className="rounded-full bg-gradient-to-r from-sky-600 to-emerald-600 px-5 py-2.5 text-sm font-bold text-white shadow-md transition hover:shadow-lg hover:scale-105 active:scale-95"
+            className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold shadow-md transition hover:shadow-lg hover:scale-105 active:scale-95 ${
+              isHelpActive
+                ? "bg-gradient-to-r from-violet-600 to-sky-600 text-white"
+                : "bg-gradient-to-r from-sky-600 to-emerald-600 text-white"
+            }`}
           >
-            Solicitar apoyo
+            <HelpCircle size={18} />
+            Ayuda
           </Link>
         </div>
 
@@ -145,9 +151,14 @@ export default function Header() {
           <Link
             to="/help"
             onClick={() => setOpen(false)}
-            className="mt-3 text-center rounded-2xl bg-gradient-to-r from-sky-600 via-emerald-600 to-violet-600 px-5 py-3 text-sm font-bold text-white shadow-md transition active:scale-95"
+            className={`mt-3 flex items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-bold text-white shadow-md transition active:scale-95 ${
+              isHelpActive
+                ? "bg-gradient-to-r from-violet-600 to-sky-600"
+                : "bg-gradient-to-r from-sky-600 via-emerald-600 to-violet-600"
+            }`}
           >
-            Solicitar apoyo
+            <HelpCircle size={18} />
+            Ayuda
           </Link>
         </nav>
       </div>
