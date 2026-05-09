@@ -37,7 +37,7 @@ const benefits = [
     description:
       "Promueven procesos de contratación basados en el talento y las capacidades de cada persona, sin discriminación.",
     image:
-      "https://blog.babelteam.com/wp-content/uploads/2024/01/cultura-organizacional-inclusiva-00.jpg",
+      "https://difusionconcausa.com/wp-content/uploads/2023/09/Diversidad-e-inclusion-en-las-OSC-claves-para-una-cultura-organizacional-equitativa.jpg",
     icon: Scale,
     gradient: "from-violet-500 to-purple-700",
   },
