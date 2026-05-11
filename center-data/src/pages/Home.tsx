@@ -245,88 +245,8 @@ export const Home = () => {
         </motion.div>
       </section>
 
-      {/* PROBLEM / MISSION */}
-       <section
-        id="mision"
-        className="relative max-w-7xl mx-auto px-6 pb-24"
-      >
-        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-10 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-3xl shadow-xl border border-sky-100 p-8 md:p-10"
-          >
-            <span className="inline-flex items-center rounded-full bg-sky-100 text-sky-700 px-4 py-2 text-sm font-semibold mb-5">
-              Nuestra razón de ser
-            </span>
+    
 
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
-              ¿Por qué existe Access To Work?
-            </h2>
-
-            <p className="text-slate-600 text-lg leading-relaxed mb-5">
-              Muchas personas con discapacidad enfrentan barreras para acceder
-              a un empleo digno. En muchos casos, la discriminación laboral se
-              manifiesta cuando se les niegan oportunidades debido a prejuicios
-              o estereotipos, sin considerar sus verdaderas capacidades y
-              talentos.
-            </p>
-
-            <p className="text-slate-600 text-lg leading-relaxed">
-              Además, la falta de accesibilidad, la escasa adaptación de los
-              espacios laborales y la desinformación de algunos empleadores
-              siguen siendo obstáculos importantes. Access To Work nace para
-              cambiar esta realidad.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-            className="grid sm:grid-cols-2 gap-5"
-          >
-            <div className="rounded-3xl bg-gradient-to-br from-sky-500 to-sky-700 text-white p-7 shadow-xl">
-              <UsersRound size={38} className="mb-5" />
-              <h3 className="text-2xl font-bold mb-3">Talento visible</h3>
-              <p className="text-white/90 leading-relaxed">
-                Promovemos que las capacidades de cada persona sean reconocidas
-                por encima de cualquier barrera.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gradient-to-br from-emerald-500 to-emerald-700 text-white p-7 shadow-xl sm:mt-10">
-              <Building2 size={38} className="mb-5" />
-              <h3 className="text-2xl font-bold mb-3">Empresas conscientes</h3>
-              <p className="text-white/90 leading-relaxed">
-                Acercamos información y recursos para construir espacios de
-                trabajo más humanos y accesibles.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gradient-to-br from-amber-400 to-orange-500 text-white p-7 shadow-xl">
-              <Scale size={38} className="mb-5" />
-              <h3 className="text-2xl font-bold mb-3">Igualdad real</h3>
-              <p className="text-white/90 leading-relaxed">
-                Impulsamos oportunidades laborales justas, dignas y libres de
-                discriminación.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gradient-to-br from-violet-500 to-purple-700 text-white p-7 shadow-xl sm:mt-10">
-              <ShieldCheck size={38} className="mb-5" />
-              <h3 className="text-2xl font-bold mb-3">Acompañamiento</h3>
-              <p className="text-white/90 leading-relaxed">
-                Brindamos orientación para facilitar el acceso al empleo y el
-                desarrollo profesional.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
         <div className="text-center mb-14">
