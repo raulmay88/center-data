@@ -72,181 +72,181 @@ export const Home = () => {
       </section>
 
    {/* INTRO */}
-<section className="relative max-w-6xl mx-auto px-6 py-24 text-center overflow-hidden">
-	<div className="absolute -top-10 left-10 w-28 h-28 bg-amber-200/50 rounded-full blur-3xl" />
-	<div className="absolute bottom-0 right-10 w-32 h-32 bg-emerald-200/60 rounded-full blur-3xl" />
+      <section className="relative max-w-6xl mx-auto px-6 py-24 text-center overflow-hidden">
+        <div className="absolute -top-10 left-10 w-28 h-28 bg-amber-200/50 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-10 w-32 h-32 bg-emerald-200/60 rounded-full blur-3xl" />
 
-	<motion.div
-		initial={{ opacity: 0, y: 30 }}
-		whileInView={{ opacity: 1, y: 0 }}
-		transition={{ duration: 0.6 }}
-		viewport={{ once: true }}
-		className="relative"
-	>
-		<span className="inline-flex items-center gap-2 rounded-full bg-emerald-100 text-emerald-700 px-4 py-2 text-sm font-semibold mb-5">
-			<HeartHandshake size={18} />
-			Oportunidades sin barreras
-		</span>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <span className="inline-flex items-center gap-2 rounded-full bg-emerald-100 text-emerald-700 px-4 py-2 text-sm font-semibold mb-5">
+            <HeartHandshake size={18} />
+            Oportunidades sin barreras
+          </span>
 
-		<h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">
-			Objetivo general
-		</h2>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">
+            Objetivo general
+          </h2>
 
-		<p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
-			Analizar la discriminación que enfrentan las personas con discapacidad
-			para acceder a un empleo formal, identificando sus causas, consecuencias
-			y las soluciones existentes.
-		</p>
+          <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
+            Analizar la discriminación que enfrentan las personas con discapacidad
+            para acceder a un empleo formal, identificando sus causas, consecuencias
+            y las soluciones existentes.
+          </p>
 
-		{/* CONTENIDO */}
-		<motion.div
-			initial={{ opacity: 0, y: 30 }}
-			whileInView={{ opacity: 1, y: 0 }}
-			transition={{ delay: 0.2, duration: 0.6 }}
-			viewport={{ once: true }}
-			className="mt-12 grid gap-8 text-left"
-		>
-			{/* INTRODUCCIÓN */}
-			<article className="rounded-[2rem] border border-sky-100 bg-white/90 p-7 md:p-9 shadow-xl backdrop-blur-sm">
-				<div className="flex flex-col md:flex-row gap-5">
-					<div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-emerald-600 text-white shadow-md">
-						<HeartHandshake size={30} />
-					</div>
+          {/* CONTENIDO */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mt-12 grid gap-8 text-left"
+          >
+            {/* INTRODUCCIÓN */}
+            <article className="rounded-[2rem] border border-sky-100 bg-white/90 p-7 md:p-9 shadow-xl backdrop-blur-sm">
+              <div className="flex flex-col md:flex-row gap-5">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-emerald-600 text-white shadow-md">
+                  <HeartHandshake size={30} />
+                </div>
 
-					<div>
-						<h3 className="text-2xl font-extrabold text-slate-900 mb-4">
-							Introducción al problema
-						</h3>
+                <div>
+                  <h3 className="text-2xl font-extrabold text-slate-900 mb-4">
+                    Introducción al problema
+                  </h3>
 
-						<div className="space-y-4 text-slate-600 text-lg leading-relaxed">
-							<p>
-								El acceso al empleo es un derecho fundamental para el
-								desarrollo integral de las personas. Sin embargo, quienes
-								tienen alguna discapacidad no siempre lo ejercen en igualdad
-								de condiciones. A pesar de los avances normativos y sociales,
-								la discriminación laboral persiste como un obstáculo relevante.
-							</p>
+                  <div className="space-y-4 text-slate-600 text-lg leading-relaxed">
+                    <p>
+                      El acceso al empleo es un derecho fundamental para el
+                      desarrollo integral de las personas. Sin embargo, quienes
+                      tienen alguna discapacidad no siempre lo ejercen en igualdad
+                      de condiciones. A pesar de los avances normativos y sociales,
+                      la discriminación laboral persiste como un obstáculo relevante.
+                    </p>
 
-							<p>
-								Las personas con discapacidad se enfrentan a diversas barreras
-								para acceder al empleo, entre ellas los prejuicios sociales y
-								los entornos laborales no accesibles. Esta investigación analiza
-								la discriminación que experimentan al ingresar al mercado laboral,
-								así como sus causas, consecuencias y posibles soluciones.
-							</p>
+                    <p>
+                      Las personas con discapacidad se enfrentan a diversas barreras
+                      para acceder al empleo, entre ellas los prejuicios sociales y
+                      los entornos laborales no accesibles. Esta investigación analiza
+                      la discriminación que experimentan al ingresar al mercado laboral,
+                      así como sus causas, consecuencias y posibles soluciones.
+                    </p>
 
-							<p>
-								Esta problemática afecta no solo su desarrollo profesional y
-								económico, sino también su autoestima, autonomía y participación
-								social.
-							</p>
-						</div>
-					</div>
-				</div>
-			</article>
+                    <p>
+                      Esta problemática afecta no solo su desarrollo profesional y
+                      económico, sino también su autoestima, autonomía y participación
+                      social.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
 
-			{/* PLANTEAMIENTO */}
-			<article className="rounded-[2rem] border border-amber-100 bg-amber-50/70 p-7 md:p-9 shadow-lg">
-				<h3 className="text-2xl font-extrabold text-slate-900 mb-4">
-					Planteamiento del problema
-				</h3>
+            {/* PLANTEAMIENTO */}
+            <article className="rounded-[2rem] border border-amber-100 bg-amber-50/70 p-7 md:p-9 shadow-lg">
+              <h3 className="text-2xl font-extrabold text-slate-900 mb-4">
+                Planteamiento del problema
+              </h3>
 
-				<div className="space-y-4 text-slate-600 text-lg leading-relaxed">
-					<p>
-						Actualmente, las personas con discapacidad presentan mayores
-						dificultades para conseguir un empleo en comparación con las
-						personas sin discapacidad, aun cuando poseen preparación académica,
-						habilidades y experiencia necesarias para desempeñar un puesto de
-						trabajo.
-					</p>
+              <div className="space-y-4 text-slate-600 text-lg leading-relaxed">
+                <p>
+                  Actualmente, las personas con discapacidad presentan mayores
+                  dificultades para conseguir un empleo en comparación con las
+                  personas sin discapacidad, aun cuando poseen preparación académica,
+                  habilidades y experiencia necesarias para desempeñar un puesto de
+                  trabajo.
+                </p>
 
-					<p>
-						Esta situación se debe principalmente a la discriminación estructural,
-						social y cultural que persiste dentro de las empresas y en la
-						sociedad en general.
-					</p>
+                <p>
+                  Esta situación se debe principalmente a la discriminación estructural,
+                  social y cultural que persiste dentro de las empresas y en la
+                  sociedad en general.
+                </p>
 
-					<p>
-						El problema radica en que muchas organizaciones consideran la
-						discapacidad como una limitación absoluta, lo que provoca exclusión
-						desde los procesos de reclutamiento y selección. En muchos casos,
-						los empleadores asumen que contratar a una persona con discapacidad
-						implica mayores costos, menor productividad o adaptaciones complejas,
-						sin evaluar objetivamente las capacidades reales del individuo.
-					</p>
+                <p>
+                  El problema radica en que muchas organizaciones consideran la
+                  discapacidad como una limitación absoluta, lo que provoca exclusión
+                  desde los procesos de reclutamiento y selección. En muchos casos,
+                  los empleadores asumen que contratar a una persona con discapacidad
+                  implica mayores costos, menor productividad o adaptaciones complejas,
+                  sin evaluar objetivamente las capacidades reales del individuo.
+                </p>
 
-					<p>
-						Como consecuencia, muchas personas con discapacidad se ven obligadas
-						a aceptar empleos informales, mal remunerados o con pocas oportunidades
-						de crecimiento.
-					</p>
-				</div>
-			</article>
+                <p>
+                  Como consecuencia, muchas personas con discapacidad se ven obligadas
+                  a aceptar empleos informales, mal remunerados o con pocas oportunidades
+                  de crecimiento.
+                </p>
+              </div>
+            </article>
 
-			{/* ALCANCE */}
-			<article className="rounded-[2rem] border border-emerald-100 bg-emerald-50/70 p-7 md:p-9 shadow-lg">
-				<h3 className="text-2xl font-extrabold text-slate-900 mb-4">
-					¿Qué alcance tiene?
-				</h3>
+            {/* ALCANCE */}
+            <article className="rounded-[2rem] border border-emerald-100 bg-emerald-50/70 p-7 md:p-9 shadow-lg">
+              <h3 className="text-2xl font-extrabold text-slate-900 mb-4">
+                ¿Qué alcance tiene?
+              </h3>
 
-				<div className="space-y-4 text-slate-600 text-lg leading-relaxed">
-					<p>
-						Esta problemática tiene un amplio impacto social, pues afecta a un
-						sector poblacional considerable. Según datos del INEGI, en Quintana
-						Roo habitan más de 240 mil personas con discapacidad —cifra que
-						podría ser mayor—, y en el municipio de Benito Juárez aproximadamente
-						el 50% de este grupo se encuentra sin empleo.
-					</p>
+              <div className="space-y-4 text-slate-600 text-lg leading-relaxed">
+                <p>
+                  Esta problemática tiene un amplio impacto social, pues afecta a un
+                  sector poblacional considerable. Según datos del INEGI, en Quintana
+                  Roo habitan más de 240 mil personas con discapacidad —cifra que
+                  podría ser mayor—, y en el municipio de Benito Juárez aproximadamente
+                  el 50% de este grupo se encuentra sin empleo.
+                </p>
 
-					<p>La situación trasciende el desempleo, ya que también se manifiesta en:</p>
+                <p>La situación trasciende el desempleo, ya que también se manifiesta en:</p>
 
-					<ul className="grid gap-3 md:grid-cols-2 mt-4">
-						<li className="rounded-2xl bg-white/80 border border-emerald-100 px-4 py-3 font-medium text-slate-700">
-							Exclusión en procesos de selección.
-						</li>
+                <ul className="grid gap-3 md:grid-cols-2 mt-4">
+                  <li className="rounded-2xl bg-white/80 border border-emerald-100 px-4 py-3 font-medium text-slate-700">
+                    Exclusión en procesos de selección.
+                  </li>
 
-						<li className="rounded-2xl bg-white/80 border border-emerald-100 px-4 py-3 font-medium text-slate-700">
-							Espacios laborales no accesibles.
-						</li>
+                  <li className="rounded-2xl bg-white/80 border border-emerald-100 px-4 py-3 font-medium text-slate-700">
+                    Espacios laborales no accesibles.
+                  </li>
 
-						<li className="rounded-2xl bg-white/80 border border-emerald-100 px-4 py-3 font-medium text-slate-700">
-							Prejuicios y estereotipos sobre su desempeño.
-						</li>
+                  <li className="rounded-2xl bg-white/80 border border-emerald-100 px-4 py-3 font-medium text-slate-700">
+                    Prejuicios y estereotipos sobre su desempeño.
+                  </li>
 
-						<li className="rounded-2xl bg-white/80 border border-emerald-100 px-4 py-3 font-medium text-slate-700">
-							Escasa oferta de programas de inclusión.
-						</li>
-					</ul>
+                  <li className="rounded-2xl bg-white/80 border border-emerald-100 px-4 py-3 font-medium text-slate-700">
+                    Escasa oferta de programas de inclusión.
+                  </li>
+                </ul>
 
-					<p>
-						Asimismo, la discriminación no se limita al ámbito laboral, sino que
-						también afecta el acceso a la educación, la movilidad y los servicios
-						públicos, obstaculizando su desarrollo integral.
-					</p>
-				</div>
-			</article>
+                <p>
+                  Asimismo, la discriminación no se limita al ámbito laboral, sino que
+                  también afecta el acceso a la educación, la movilidad y los servicios
+                  públicos, obstaculizando su desarrollo integral.
+                </p>
+              </div>
+            </article>
 
-			{/* CIERRE */}
-			<article className="rounded-[2rem] bg-gradient-to-br from-sky-600 to-emerald-600 p-7 md:p-9 shadow-xl text-white">
-				<h3 className="text-2xl font-extrabold mb-4">
-					Importancia de atender esta problemática
-				</h3>
+            {/* CIERRE */}
+            <article className="rounded-[2rem] bg-gradient-to-br from-sky-600 to-emerald-600 p-7 md:p-9 shadow-xl text-white">
+              <h3 className="text-2xl font-extrabold mb-4">
+                Importancia de atender esta problemática
+              </h3>
 
-				<p className="text-lg leading-relaxed text-white/90">
-					En este sentido, es necesario no solo identificar la situación, sino
-					también fomentar la conciencia social, fortalecer el marco normativo
-					de protección e impulsar medidas concretas que faciliten el acceso,
-					permanencia y desarrollo laboral de las personas con discapacidad.
-					Solo mediante un compromiso conjunto entre gobiernos, empresas y
-					sociedad se podrá garantizar la igualdad de oportunidades.
-				</p>
-			</article>
-		</motion.div>
-	</motion.div>
-</section>
+              <p className="text-lg leading-relaxed text-white/90">
+                En este sentido, es necesario no solo identificar la situación, sino
+                también fomentar la conciencia social, fortalecer el marco normativo
+                de protección e impulsar medidas concretas que faciliten el acceso,
+                permanencia y desarrollo laboral de las personas con discapacidad.
+                Solo mediante un compromiso conjunto entre gobiernos, empresas y
+                sociedad se podrá garantizar la igualdad de oportunidades.
+              </p>
+            </article>
+          </motion.div>
+        </motion.div>
+      </section>
 
       {/* PROBLEM / MISSION */}
-      {/* <section
+       <section
         id="mision"
         className="relative max-w-7xl mx-auto px-6 pb-24"
       >
@@ -327,7 +327,6 @@ export const Home = () => {
           </motion.div>
         </div>
       </section>
- */}
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
         <div className="text-center mb-14">
