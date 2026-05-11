@@ -2,13 +2,11 @@ import { motion } from "framer-motion";
 import {
 	BadgeCheck,
 	Building2,
-	Eye,
 	HeartHandshake,
 	Lightbulb,
 	Scale,
 	ShieldCheck,
 	Sparkles,
-	Target,
 	Users,
 	UsersRound,
 } from "lucide-react";
