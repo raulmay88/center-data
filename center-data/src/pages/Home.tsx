@@ -46,13 +46,13 @@ export const Home = () => {
               Discriminación laboral hacia las personas con discapacidad
             </h1>
 
-            <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/90 mb-2 leading-relaxed">
               Impulsamos la inclusión laboral y conectamos talento con
               oportunidades justas, accesibles y humanas para personas con
               discapacidad.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
               <a
                 href="#mision"
                 className="rounded-full bg-white text-sky-700 px-7 py-3 font-semibold shadow-lg transition hover:bg-sky-50 hover:scale-105 active:scale-95"
