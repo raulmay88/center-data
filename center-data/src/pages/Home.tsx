@@ -246,7 +246,7 @@ export const Home = () => {
 </section>
 
       {/* PROBLEM / MISSION */}
-      <section
+      {/* <section
         id="mision"
         className="relative max-w-7xl mx-auto px-6 pb-24"
       >
@@ -327,7 +327,7 @@ export const Home = () => {
           </motion.div>
         </div>
       </section>
-
+ */}
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
         <div className="text-center mb-14">
