@@ -41,17 +41,22 @@ const legalItems = [
   {
     title: "Ley Federal del Trabajo",
     description:
-      "Establece que ninguna persona puede ser discriminada por motivos de discapacidad, promoviendo condiciones laborales justas e igualitarias.",
+      "Establece que ninguna persona puede ser discriminada por motivos de discapacidad, promoviendo condiciones laborales justas, dignas e igualitarias.",
   },
   {
     title: "Ley General para la Inclusión de las Personas con Discapacidad",
     description:
-      "Reconoce la participación plena de las personas con discapacidad en la vida laboral, social y comunitaria.",
+      "Reconoce que las personas con discapacidad gozan de todos los derechos establecidos en el orden jurídico mexicano, impulsando su inclusión, igualdad de oportunidades, accesibilidad y participación plena en la sociedad.",
+  },
+  {
+    title: "Ley Federal para Prevenir y Eliminar la Discriminación",
+    description:
+      "Busca prevenir y eliminar cualquier forma de discriminación, incluyendo aquella relacionada con la discapacidad, y promueve la igualdad de oportunidades y de trato.",
   },
   {
     title: "Legislación estatal en Quintana Roo",
     description:
-      "Promueve políticas públicas de inclusión, accesibilidad y oportunidades laborales para personas con discapacidad.",
+      "Promueve políticas públicas de inclusión, accesibilidad y oportunidades laborales para personas con discapacidad dentro del estado.",
   },
 ];
 
@@ -107,6 +112,7 @@ export const RightLawsPage = () => {
           className="relative"
         >
           <div className="absolute -left-6 -top-6 h-32 w-32 rounded-full bg-amber-200/70 blur-3xl" />
+
           <div className="relative overflow-hidden rounded-[2rem] border border-white shadow-2xl">
             <img
               src="https://img.freepik.com/foto-gratis/acercamiento-joven-empresario-que-realiza-pasantia_23-2149305375.jpg"
@@ -196,9 +202,7 @@ export const RightLawsPage = () => {
                 viewport={{ once: true }}
                 className="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-lg transition hover:shadow-2xl"
               >
-                <div
-                  className={`h-2 bg-gradient-to-r ${item.className}`}
-                />
+                <div className={`h-2 bg-gradient-to-r ${item.className}`} />
 
                 <div className="p-8 text-center">
                   <div
@@ -242,26 +246,37 @@ export const RightLawsPage = () => {
               Leyes que respaldan la inclusión laboral
             </h2>
 
-            <div className="space-y-5">
+            <p className="mb-8 text-lg leading-relaxed text-slate-600">
+              En México existen leyes que protegen la igualdad, la no
+              discriminación, la accesibilidad y el derecho de las personas con
+              discapacidad a participar plenamente en la vida laboral y social.
+            </p>
+
+            <div className="grid gap-5 sm:grid-cols-2">
               {legalItems.map((item, index) => (
                 <motion.div
                   key={item.title}
-                  initial={{ opacity: 0, x: -24 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.12, duration: 0.5 }}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
                   viewport={{ once: true }}
-                  className="rounded-3xl border border-slate-100 bg-slate-50 p-5 shadow-sm"
+                  className="group relative overflow-hidden rounded-3xl border border-slate-100 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-1 hover:bg-white hover:shadow-xl"
                 >
-                  <h3 className="mb-2 flex items-center gap-2 text-lg font-bold text-slate-900">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
-                      {index + 1}
-                    </span>
-                    {item.title}
-                  </h3>
+                  <div className="absolute -right-10 -top-10 h-24 w-24 rounded-full bg-emerald-100 opacity-0 blur-2xl transition group-hover:opacity-100" />
 
-                  <p className="leading-relaxed text-slate-600">
-                    {item.description}
-                  </p>
+                  <div className="relative">
+                    <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-sky-600 text-sm font-extrabold text-white shadow-md">
+                      {index + 1}
+                    </div>
+
+                    <h3 className="mb-2 text-lg font-bold text-slate-900">
+                      {item.title}
+                    </h3>
+
+                    <p className="leading-relaxed text-slate-600">
+                      {item.description}
+                    </p>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -280,7 +295,7 @@ export const RightLawsPage = () => {
               <img
                 src="https://img.freepik.com/foto-gratis/mujer-irreconocible-pensando-oficina_23-2148377792.jpg"
                 alt="Persona revisando información laboral"
-                className="h-[460px] w-full object-cover"
+                className="h-[520px] w-full object-cover"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
@@ -323,7 +338,7 @@ export const RightLawsPage = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.65 }}
           viewport={{ once: true }}
-          className="order-1 md:order-2 rounded-[2rem] border border-red-100 bg-white p-8 shadow-xl md:p-10"
+          className="order-1 rounded-[2rem] border border-red-100 bg-white p-8 shadow-xl md:order-2 md:p-10"
         >
           <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-red-100 text-red-600">
             <AlertTriangle size={36} />
